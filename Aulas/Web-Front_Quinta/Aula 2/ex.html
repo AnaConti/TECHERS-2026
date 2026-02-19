@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplar de Formulário HTML</title>
+</head>
+
+<body>
+
+    <h1>Inscrição para o Evento Tech 2026</h1>
+    <p>Por favor, preencha os dados abaixo para garantir sua vaga.</p>
+
+    <form action="/processar_cadastro.php" method="POST">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome" required placeholder="Ex: João Silva"><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required placeholder="email@exemplo.com"><br><br>
+
+            <label for="senha">Crie uma Senha:</label><br>
+            <input type="password" id="senha" name="senha" required><br><br>
+
+            <label for="nascimento">Data de Nascimento:</label><br>
+            <input type="date" id="nascimento" name="nascimento">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Preferências do Evento</legend>
+
+            <label for="ingresso">Tipo de Ingresso:</label><br>
+            <select id="ingresso" name="ingresso">
+                <option value="vip">VIP</option>
+                <option value="padrao" selected>Padrão</option>
+                <option value="estudante">Estudante</option>
+            </select><br><br>
+
+            <label>Tamanho da Camiseta:</label><br>
+            <input type="radio" id="p" name="camiseta" value="P">
+            <label for="p">Pequeno (P)</label><br>
+
+            <input type="radio" id="m" name="camiseta" value="M" checked>
+            <label for="m">Médio (M)</label><br>
+
+            <input type="radio" id="g" name="camiseta" value="G">
+            <label for="g">Grande (G)</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Detalhes Adicionais</legend>
+
+            <label for="interesses">Área de maior interesse:</label><br>
+            <input list="lista-interesses" id="interesses" name="interesses" placeholder="Escolha ou digite...">
+            <datalist id="lista-interesses">
+                <option value="Tecnologia">
+                <option value="Design">
+                <option value="Negócios">
+                <option value="Marketing">
+            </datalist><br><br>
+
+            <label for="obs">Observações (Alergias, necessidades especiais, etc):</label><br>
+            <textarea id="obs" name="obs" rows="4" cols="40" placeholder="Escreva aqui..."></textarea>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Enviar Inscrição</button>
+        <button type="reset">Limpar Formulário</button>
+
+    </form>
+
+</body>
+
+</html>

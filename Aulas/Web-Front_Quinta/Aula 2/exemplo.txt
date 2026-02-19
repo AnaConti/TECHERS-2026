@@ -1,0 +1,18 @@
+🎮 Atividade: "Crie seu Próprio Personagem de RPG / Game"
+
+Dados do Herói (fieldset):
+    text: Nome do Personagem.
+    password: "Senha Secreta do Esconderijo".
+    color: Cor da aura/poder do herói.
+
+Atributos e Classe (select e range):
+    select: Classe (Guerreiro, Mago, Hacker, Arqueiro).
+    range: Nível de Força (de 0 a 100).
+
+Equipamento e Origem (checkbox e datalist):
+    checkbox: Itens de inventário (Capa, Espada, Poção, Laptop).
+    datalist: Planeta de origem (sugira Marte, Terra, Cybertron).
+
+História (textarea):
+
+Um campo para a "Backstory" do personagem.
