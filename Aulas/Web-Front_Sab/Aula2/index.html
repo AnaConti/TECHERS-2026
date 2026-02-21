@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplar de Formulário HTML</title>
+</head>
+
+<body>
+
+    <h1>Cleiton Super-Heróis</h1>
+    <p>Venha ser um Super-Herói para o Cleiton, se cadastre no site abaixo e aguarde sua chamada!</p>
+
+    <form action="/processar_cadastro.php" method="POST">
+        <br>
+        <label for="">Nome do super-heroi</label> <br>
+        <input type="text" name="nome">
+        <br> <br>
+        <label for="">Poder principal</label><br>
+        <select name="poder" id="poder">
+            <option value="" selected>Selecione</option>
+            <option value="voo">Voo</option>
+            <option value="forca">Força</option>
+            <option value="invisibilidade">Invisibilidade</option>
+            <option value="outro">Outro</option>
+        </select>
+        <br><br>
+        <label for="">Nível de Perigo</label><br>
+        <input type="number" min="1" max="10">
+        <br><br>
+        <label for="">Cor do uniforme</label><br>
+        <input type="color">
+
+        <br><br>
+        <label for="">Data de descoberta</label><br>
+        <input type="date" max="2026-02-07">
+
+        <br><br>
+        <label for="">Logo<br>
+        <input type="file">
+     
+        <br><br>
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+
+</html>

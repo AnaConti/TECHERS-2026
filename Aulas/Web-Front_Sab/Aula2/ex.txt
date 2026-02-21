@@ -1,0 +1,16 @@
+1. O Formulário de "Recrutamento de Super-Heróis"
+Este é excelente para crianças e adolescentes. Ele permite explorar campos criativos e lúdicos.
+
+Campos sugeridos:
+
+Nome de Herói: type="text"
+
+Poder Principal: select (Voo, Força, Invisibilidade)
+
+Nível de Perigo: type="range" (mínimo 1, máximo 10)
+
+Cor do Uniforme: type="color"
+
+Data de Descoberta dos Poderes: type="date"
+
+Upload do Logotipo: type="file"

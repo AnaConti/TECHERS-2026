@@ -1,0 +1,27 @@
+📝 Passo 1: Informações Básicas (Obrigatório)
+Todo herói precisa de uma identidade. Use campos de texto e seletores.
+
+Nome do Herói: type="text" (com um placeholder como "Ex: Artorius").
+
+Classe: Uma lista de seleção (select) com as opções: Guerreiro, Mago, Arqueiro e Ladino.
+
+Idade: type="number" (com min="18" e max="500").
+
+🎨 Passo 2: Customização Visual (O Diferencial)
+Aqui é onde eles usam os inputs mais "visuais" do HTML5.
+
+Cor da Aura/Energia: type="color".
+
+Nível de Força e Magia: Dois inputs do tipo type="range".
+
+Dica para os alunos: Definam um min="0" e max="100" para a barra de progresso.
+
+Foto do Herói: type="file" (para "fazer o upload" da aparência).
+
+⚔️ Passo 3: Equipamentos e Origem (Avançado)
+
+Itens Iniciais: Use type="checkbox" para uma lista de itens (Poção, Escudo, Mapa, Tocha).
+
+Lado da Força: Use type="radio" para escolher entre "Luz" ou "Trevas" (lembre-os de que o name deve ser igual para os dois botões radio funcionarem corretamente).
+
+História do Personagem: Um textarea para o "Background" do herói.
