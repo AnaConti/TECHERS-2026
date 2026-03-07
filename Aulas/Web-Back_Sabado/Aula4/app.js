@@ -76,4 +76,5 @@ assarPizza(1, true)
     .finally(() => {
         console.log("Cozinha fechada")
     });
+    
 
