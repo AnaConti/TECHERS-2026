@@ -1,0 +1,14 @@
+#container{
+    border: 2px solid black;
+    height: 400px;
+    background-color:burlywood;
+}
+
+#botao-jogo{
+    height: 50px;
+    width: 150px;
+    background-color:aqua;
+    border-radius: 10px;
+    position: absolute;
+}
+
