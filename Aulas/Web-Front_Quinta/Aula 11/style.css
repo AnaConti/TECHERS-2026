@@ -1,0 +1,36 @@
+muda todos os p que estao dentro da div
+.container p {
+    color: blue;
+    font-weight: bold;
+} 
+
+/* altera so os p filhos imediatos, os netos serao ignorados */
+.container > p {
+    border-bottom: 2px solid black;
+}
+
+/* mira no p que vem logo apos o fechamento da div */
+.container + p {
+    color: gray;
+    font-style: italic;
+}
+
+
+.destaque {
+    background-color: bisque;
+    width: 200px;
+    padding: 20px; /* distancia interna*/ 
+    border: 5px solid #6e6cd1; /* a "moldura"*/ 
+    margin: 15px; /* distancia de outros elementos*/ 
+}
+
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 300px;
+    padding: 50px;
+    border: 10px solid black;
+    /* 300px + 100 + 20= 420 */
+}
+
