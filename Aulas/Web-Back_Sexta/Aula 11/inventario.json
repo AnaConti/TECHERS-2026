@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1773491949296,
+    "nome": "Espada de Diamante",
+    "categoria": "Armas",
+    "quantidade": 1
+  },
+  {
+    "id": 1773491949331,
+    "nome": "Pocao de cura",
+    "categoria": "Pocao",
+    "quantidade": 3
+  },
+  {
+    "id": 1776511962431,
+    "nome": "ana",
+    "categoria": "armas",
+    "quantidade": 3
+  },
+  {
+    "id": 1777056220328,
+    "nome": null,
+    "categoria": null,
+    "quantidade": null
+  },
+  {
+    "id": 1777056232222,
+    "nome": null,
+    "categoria": null,
+    "quantidade": null
+  }
+]
