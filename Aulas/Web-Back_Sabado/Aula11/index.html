@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventário</title>
+</head>
+<body>
+    <h1>Meu inventário</h1>
+    <table>
+        <thead>
+            <tr><th>ID</th><th>Nome</th><th>Categoria</th><th>Qtd</th></tr>
+        </thead>
+
+        <tbody>
+            {{TABELA}}
+        </tbody>
+    </table>
+
+    <hr>
+    <h2>Adicionar Novo Item</h2>
+    <form action="/adicionar" method="post">
+        <label for="">Nome <input type="text" name="nome" required></label>
+        <label for="">Categoria <input type="text" name="categoria" required></label>
+        <label for="">Quantidade <input type="number" name="quantidade" required></label>
+        <button type="submit">Salvar no estoque</button>
+    </form>
+</body>
+</html>
