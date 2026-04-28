@@ -1,0 +1,37 @@
+/* 1. A Regra de Ouro (Seletor Universal) */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. A Base */
+.alvo {
+    background-color: #bdc3c7; /* Cinza */
+    padding: 50px;
+    
+    /* Regras extras apenas para centralizar o alvo no meio da tela e deixá-lo bonito */
+    width: fit-content; 
+    margin: 50px auto;
+    border-radius: 50px;
+}
+
+/* 3. O Círculo Externo (Azul) 
+   Restrição: Usar Filho Direto da base do alvo */
+.alvo > div {
+    background-color: #3498db; /* Azul */
+    border: 10px solid black;
+    border-radius: 50%;
+    
+    /* O truque mestre: O padding simétrico dispensa a necessidade 
+       de margin: auto vertical e constrói o tamanho do círculo azul! */
+    padding: 50px; 
+}
+
+/* 4. O Círculo Interno (Vermelho) 
+   Restrição: Usar Seletor de Descendente (Espaço) para "furar" a hierarquia */
+.alvo div div {
+    background-color: #e74c3c; /* Vermelho */
+    width: 50px;
+    height: 50px; /* Necessário para dar o formato quadrado antes do radius */
+    border-radius: 50%;
+    margin: auto;
+}

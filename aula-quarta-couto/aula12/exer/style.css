@@ -1,0 +1,27 @@
+/* 2. Os Requisitos e Restrições (O Desafio CSS): 
+Sua missão é organizar os três blocos (Logo, Links e Botão) 
+seguindo estas regras:
+A Estrutura: O cabeçalho (.navbar) deve ter um fundo escuro e 
+uma altura de 80px.
+O Alinhamento Mestre: Posicione o Logo na extrema esquerda, 
+o Botão na extrema direita e os Links centralizados.
+Restrição: Você não pode usar margin-left ou margin-right. 
+Use justify-content no pai (.navbar).
+O Alinhamento Vertical: Garanta que todos fiquem perfeitamente 
+centralizados na altura do cabeçalho.
+O Grupo de Links: Use Flexbox também na classe .links para organizar
+ os três <a> lado a lado, com um gap de 20px entre eles. */
+
+.navbar{
+    background-color: rgb(7, 7, 88);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    flex-direction: row;
+    gap: 20px;
+}
+

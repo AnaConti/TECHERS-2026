@@ -1,0 +1,20 @@
+.item {
+    background-color: #3498db; /* muda cor de fundo*/
+    color: white; /* muda cor do texto*/
+    font-weight: bold; /* texto em negrito*/
+    padding: 20px; /* distancia do conteudo e borda*/
+    /* margin-bottom: 10px; mostra o empilhamento padrao do block */
+    border-radius: 5px; /* arredonda as bordas */
+    text-align: center; /* alinha o texto no centro*/
+    display: inline;
+}
+
+.menu-pai {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background-color: #ecf0f1;
+    /* flex-direction: row;
+    gap: 15px; */
+}
