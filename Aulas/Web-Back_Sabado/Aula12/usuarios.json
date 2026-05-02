@@ -1,0 +1,14 @@
+[
+  {
+    "nome": "ana",
+    "email": "anabarbara.conti@gmail.com",
+    "senha": "abcdefg",
+    "idade": 24
+  },
+  {
+    "nome": "ana",
+    "email": "ana@gmail.com",
+    "senha": "123456789",
+    "idade": 24
+  }
+]
