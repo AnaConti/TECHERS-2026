@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste: Meu Primeiro Componente</title>
+    <!-- O script deve vir antes ou com 'defer' para o navegador conhecer a tag -->
+    <script src="app.js" defer></script> 
+    <style>
+        /* Um pouco de CSS apenas para você visualizar melhor o componente */
+        body { font-family: sans-serif; padding: 20px; }
+        .wrapper { display: flex; align-items: center; gap: 10px; border: 1px solid #ccc; padding: 10px; border-radius: 8px; width: fit-content; }
+        .info { color: #555; font-style: italic; }
+    </style>
+</head>
+<body>
+
+    <h1>Aula 13: Web Components</h1>
+    
+    <!-- Aqui usamos a nossa própria tag criada no JS! -->
+    <popup-info 
+        data-text="Este é um componente customizado nativo!">
+    </popup-info>
+
+</body>
+</html>

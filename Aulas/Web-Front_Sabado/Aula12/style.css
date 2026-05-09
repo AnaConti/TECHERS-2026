@@ -1,0 +1,22 @@
+.item {
+    background-color:rgb(169, 169, 226);
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    /* margin-bottom: 10px;  */
+    border-radius: 5px;
+    text-align: center;
+
+    display: inline;
+}
+
+.menu-pai {
+    display: flex;
+    /* flex-direction: row;
+    gap: 15px; */
+
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background-color: rgb(230, 223, 237);
+}
