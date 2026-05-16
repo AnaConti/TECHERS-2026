@@ -1,13 +1,11 @@
 class PopupInfo extends HTMLElement {
     constructor(){
-        // Sempre chamar super() primeiro no construtor. Isso permite que 
-        // nossa classe herde os "poderes" corretos do HTMLElement.
         super();
+
+        this.shadow = this.attachShadow({ mode: 'open'});
     }
 
-    // Método de Ciclo de Vida: Roda quando a tag é inserida no HTML
     connectedCallback(){
-        // 1. Criando os elementos internos via JavaScript (DOM API)
         const wrapper = document.createElement("span");
         wrapper.setAttribute("class", "wrapper");
 
@@ -18,11 +16,9 @@ class PopupInfo extends HTMLElement {
         const info = document.createElement("span");
         info.setAttribute("class", "info");
 
-        // 2. Lendo informações dos atributos da tag (ex: data-text="...")
         const text = this.getAttribute("data-text");
         info.textContent = text;
 
-        // 3. Lógica condicional para a imagem
         let imgUrl;
         if (this.hasAttribute("img")){
             imgUrl = this.getAttribute("img");
@@ -35,13 +31,26 @@ class PopupInfo extends HTMLElement {
         img.setAttribute("alt", "Icone de informação");
         img.setAttribute("width", "100px");
         
-        // 4. Montando a hierarquia (Pai e Filhos)
         icon.appendChild(img);
+
+        const style = document.createElement("style")
+
+        style.textContent = `
+            .wrapper { position: relative; display: inline-block; }
+            .info {
+                visibility: hidden; width: 200px; background-color: #333;
+                color: #fff; text-align: center; padding: 10px; border-radius: 5px;
+                position: absolute; z-index: 1; bottom: 125%; left: 50%;
+                margin-left: -100px; opacity: 0; transition: opacity 0.3s;
+            }
+        `
+
+
         wrapper.appendChild(icon);
         wrapper.appendChild(info);
 
-        // 5. Anexando tudo dentro do NOSSO componente (o this)
-        this.appendChild(wrapper);
+        this.shadow.appendChild(style);
+        this.shadow.appendChild(wrapper);
     }
 }  
 
