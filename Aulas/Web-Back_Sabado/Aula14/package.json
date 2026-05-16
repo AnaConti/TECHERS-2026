@@ -1,0 +1,21 @@
+{
+  "name": "aula14",
+  "version": "1.0.0",
+  "description": "Sistema de estudo para dominar o npm e pacotes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node teste.js"
+  },
+  "keywords": [
+    "estudo",
+    "backend",
+    "nodejs"
+  ],
+  "author": "Ana",
+  "license": "ISC",
+  "type": "modules",
+  "dependencies": {
+    "uuid": "^14.0.0"
+  }
+}
